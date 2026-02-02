@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <!-- QUESTION STAGE -->
+    <section class="card" id="stage-question">
+      <h1>Will you be my Valentine? 💘</h1>
+
+      <div class="character-area">
+        <div class="character" aria-label="A cute character with my face">
+          <div class="head">
+            <img
+              id="face"
+              src="assets/face-neutral.jpg"
+              alt="My face"
+              draggable="false"
+            />
+          </div>
+
+          <div class="body">
+            <div class="shirt"></div>
+            <div class="arms"></div>
+            <div class="legs"></div>
+          </div>
+        </div>
+
+        <p class="hint">Hover the buttons 😈</p>
+      </div>
+
+      <div class="btn-row">
+        <button id="yesBtn" class="btn yes">YES ✅</button>
+        <button id="noBtn" class="btn no">no</button>
+      </div>
+
+      <p class="subtext" id="subtext"></p>
+    </section>
+
+    <!-- YES STAGE -->
+    <section class="card hidden" id="stage-yes">
+      <div class="confetti" id="confetti"></div>
+
+      <h2>🎉 Congrats!</h2>
+      <p class="bigline">You have been chosen to drink beer and watch YouTube with me 🍺📺</p>
+
+      <div class="ticket" role="group" aria-label="Exclusive pass ticket">
+        <div class="ticket-left">
+          <div class="ticket-title">EXCLUSIVE PASS</div>
+          <div class="ticket-sub">Limited Edition · Non-Transferable</div>
+
+          <div class="ticket-event">Beer + YouTube Night</div>
+
+          <div class="ticket-meta">
+            <div><span>Issued to:</span> The prettiest Valentine 💘</div>
+            <div><span>Date:</span> Valentine’s Day</div>
+            <div><span>Seat:</span> Next to me 😌</div>
+            <div><span>Dress code:</span> Cozy</div>
+          </div>
+        </div>
+
+        <div class="ticket-right">
+          <div class="qr">
+            <div class="qr-box" aria-hidden="true"></div>
+            <div class="qr-text">SCAN FOR EXTRA HUGS</div>
+          </div>
+          <div class="ticket-stamp">APPROVED 💘</div>
+        </div>
+      </div>
+
+      <button id="replayBtn" class="btn yes">Replay</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
